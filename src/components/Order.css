@@ -1,0 +1,653 @@
+.order {
+	width:100%;
+	height:100%;
+	color: #CCCCCC;
+}
+
+.order .hide {
+	display: none;
+}
+
+.order.kai {
+	background-color:rgb(163, 0, 54);
+}
+.order.uri {
+	background-color:rgb(14, 36, 160);
+}
+.order.genbikiwatasi {
+	background-color:rgb(117, 116, 10);
+}
+
+.order input, .order select {
+	background-color: rgb(107, 92, 97);
+	border: none;
+}
+.order input.error, .order select.error {
+	background-color: rgb(207, 193, 59);
+	color: #000000;
+}
+.order select:disabled {
+	background-color: rgb(41, 38, 39);
+}
+.order input[type="text"]:disabled {
+    background-color:rgb(41, 38, 39);;
+}
+.order input[type="button"] {
+    background-color:rgb(107, 92, 97);
+}
+.order input[type="button"]:disabled {
+    color: rgb(49, 49, 49)
+}
+.order input[type="button"].complete {
+    background-color:#b80229;
+}
+
+/*-----------------------------------------------------------------------------
+//	Kokyaku Info
+//-----------------------------------------------------------------------------*/
+.order .kokyakuInfo {
+	background-color:rgb(24, 23, 23);
+	padding-left: 5px;
+	height: 70px;
+}
+
+.order .kokyakuInfo .kokyaku,
+.order .kokyakuInfo .yoryoku,
+.order .kokyakuInfo .sales {
+	display: inline-block;
+	vertical-align: top;
+}
+.order .kokyakuInfo .kokyaku {
+	width: 37.5%;
+}
+.order .kokyakuInfo .yoryoku {
+	width: 62.5%;
+}
+/*
+.order .kokyakuInfo .sales {
+	width: 17.5%;
+}
+*/
+.order .kokyakuInfo .yoryoku .kanougaku {
+	display: inline-block;
+}
+.order .kokyakuInfo .yoryoku .title,
+.order .kokyakuInfo .yoryoku .value {
+	display: inline-block;
+}
+.order .kokyakuInfo .yoryoku .title {
+	width: 120px;
+}
+.order .kokyakuInfo .yoryoku .value {
+	width: 120px;
+	text-align: right;
+}
+.order .kokyakuInfo .yoryoku .nisaKanougaku .title,
+.order .kokyakuInfo .yoryoku .salesPersonName .title {
+	padding-left: 10px;
+}
+
+.order .kokyakuInfo .kokyaku .kokyakuRegistN,
+.order .kokyakuInfo .kokyaku .kokyakuNameKanzi,
+.order .kokyakuInfo .yoryoku .button_area {
+	display: flex;
+	height: 30px;
+}
+.order .kokyakuInfo .kokyaku .kokyakuNameKanzi {
+	height: 40px;
+}
+.order .kokyakuInfo .kokyaku .kokyakuRegistN > *
+, .order .kokyakuInfo .kokyaku .kokyakuNameKanzi > *
+, .order .kokyakuInfo .yoryoku .button_area > * {
+	align-self: center;
+}
+.order .kokyakuInfo .kokyaku .kokyakuNameKanzi {
+	color: rgb(231, 175, 107);
+}
+.order .kokyakuInfo .kokyaku .kokyakuRegistN input {
+	width: 130px;
+	height: 24px;
+	margin-left: 5px;
+	padding-left: 3px;
+}
+.order .kokyakuInfo .kokyaku input[type="button"],
+.order .kokyakuInfo .yoryoku input[type="button"] {
+	line-height: initial;
+	width: 100px;
+	height: 24px;
+}
+/*
+.order .kokyakuInfo .sales .salesDeptName,
+.order .kokyakuInfo .sales .salesPersonName {
+	text-align: right;
+	padding-right: 5px;
+}
+*/
+.order.phase2 .kokyakuInfo .kokyaku .kokyakuRegistN input[type="button"],
+.order.phase3 .kokyakuInfo .kokyaku .kokyakuRegistN input[type="button"] {
+	visibility: hidden;
+}
+.order.phase3 .kanougaku {
+	visibility: hidden;
+}
+/*-----------------------------------------------------------------------------
+//	Issue Info
+//-----------------------------------------------------------------------------*/
+.order .issueInfo {
+	background-color:rgb(24, 23, 23);
+	margin-top: 3px;
+	will-change: contents; /* Chromeのtransration時に文字がぼやける問題の対処 */
+}
+
+.order .issueInfo input
+,.order .issueInfo select {
+	height: 24px;
+}
+
+.order .issueInfo .row1 {
+	display: flex;
+	height: 30px;
+	padding-left: 3px;
+}
+.order .issueInfo .row1 > * {
+	align-self: center;
+}
+
+.order .issueInfo .row2 {
+	height: 60px;
+	padding-left: 3px;
+}
+
+.order .issueInfo .issue
+,.order .issueInfo .feed_price
+,.order .issueInfo .feed_market {
+	display: inline-block;
+}
+
+.order .issueInfo .issue {
+	width: 40%;
+	height: 100%;
+	vertical-align: top;
+	line-height: 60px;
+}
+.order .issueInfo .feed_price {
+	width: 35%;
+	height: 100%;
+}
+.order .issueInfo .feed_market {
+	width: 25%;
+	height: 100%;
+}
+
+.order .issueInfo .row2-1
+,.order .issueInfo .row2-2 {
+	width: 100%;
+	height: 50%;
+}
+
+.order .issueInfo .input_area {
+	display: flex;
+	width: 40%;
+}
+.order .issueInfo .input_area > div{
+	align-self: center;
+}
+.order .issueInfo .input_area .issue_search {
+	display: inline-block;
+	vertical-align: middle;
+}
+.order .issueInfo .input_area .full_board {
+	height: 24px;
+	vertical-align: middle;
+	line-height: initial;
+	margin-left: 5px;
+	width: 100px;
+}
+.order .issueInfo .kisei_icons {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.order .issueInfo .kisei_type {/*ツールチップの対象要素*/
+    /*position: relative;*/
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	background-color: rgb(202, 201, 202);
+	color: #302f2f;
+	width: 85px;
+	text-align: center;
+	line-height: 24px;
+	height: 24px;
+}
+
+.order .issueInfo .kisei_type.active {
+	background: linear-gradient(rgb(53, 36, 204), rgb(108, 141, 231));
+	color: #CCCCCC;
+}
+
+.order .issueInfo .kisei_type .kisei_list {/*ツールチップ本体*/
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(209, 247, 253);
+    color: rgb(85, 85, 85);
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    font-size:12px;
+    z-index: 1;
+	margin-top:10px;
+	list-style: none;
+}
+
+.order .issueInfo .kisei_type .kisei_list li {
+    padding-left: 5px;
+}
+
+.order .issueInfo .kisei_type.active:hover .kisei_list {
+    visibility: visible;
+}
+.order .issueInfo .kisei_type .kisei_list::after {/*吹き出しのアロー部分*/
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(209, 247, 253) transparent;
+}
+ 
+.order .issueInfo .kisei_type .kisei_list {/*表示させる際のアニメーションエフェクト。透明にしておく*/
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.order .issueInfo .kisei_type.active:hover .kisei_list {/*マウスホバーでアニメーションしながら表示*/
+    opacity: 1;
+}
+
+.order .issueInfo .issue .issue_code {
+	font-size: 1.7em;
+}
+.order .issueInfo .issue .issue_name {
+	font-size: 1.3em;
+	margin-left: 1em;
+}
+
+.order .issueInfo .feed_price > div > div {
+	display: inline-block;
+	line-height: 30px;
+	margin-left: 3px;
+}
+
+.order .issueInfo .feed_price {
+	font-size: 1.3em;
+}
+.order .issueInfo .feed_price .current_price {
+	text-align: left;
+	width:50px;
+}
+.order .issueInfo .feed_price .up_down {
+	text-align: center;
+	margin-left: 5px;
+}
+.order .issueInfo .feed_price .up {
+	color: rgb(250, 33, 98);
+}
+.order .issueInfo .feed_price .down {
+	color: rgb(13, 124, 228);
+}
+.order .issueInfo .feed_price .update_time {
+	text-align: right;
+	margin-left: 15px;
+}
+.order .issueInfo .feed_price .updown_price {
+	width:55px;
+}
+.order .issueInfo .feed_market .market
+,.order .issueInfo .feed_market .kessanbi_name {
+	display: inline-block;
+	width: 50%;
+}
+.order .issueInfo .feed_market .loanType
+,.order .issueInfo .feed_market .kessanbi {
+	text-align: right;
+	padding-right: 3px;
+	display: inline-block;
+	width: 50%;
+}
+.order .issueInfo .feed_market .loanType {
+	color: yellow;
+}
+.order .position_tables {
+	padding: 3px;
+}
+.order .position_tables > .table {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin: 0px;
+}
+
+.order .position_tables .table_row {
+	height: 20px;
+}
+.order .position_tables .table_header_item {
+	background: linear-gradient(black, rgb(107, 92, 97));
+}
+.order .position_tables .table_row_item{
+	border: none;
+	text-align: right;
+	padding-right: 3px;
+}
+.order .position_tables > .table .table_row1 .table_row_item{
+	background-color: rgb(80, 72, 75);
+}
+.order .position_tables > .table .table_row2 .table_row_item{
+	background-color: #000000;
+}
+.order .position_tables .table_header_item,
+.order .position_tables .table_row_item {
+	width: 25%;
+	color: #CCCCCC;
+}
+.order .position_tables .table_header_item {
+	text-align: center;
+}
+.order .position_tables .table_row_item.torihiki {
+	text-align: left;
+	text-indent: 8px;
+}
+.order .position_tables .table_row_item.torihiki.margin_buy {
+	text-indent: unset;
+	text-align: center;
+	color: rgb(250, 33, 98);
+}
+.order .position_tables .table_row_item.torihiki.margin_sell {
+	text-indent: unset;
+	text-align: center;
+	color: rgb(13, 124, 228);
+}
+
+.order.phase2 .issueInfo .full_board
+,.order.phase3 .issueInfo .full_board {
+	visibility: hidden;
+}
+/*-----------------------------------------------------------------------------
+//	Order Info
+//-----------------------------------------------------------------------------*/
+.orderInfo {
+	width:100%;
+	height: 340px;
+	color: #CCCCCC;
+}
+.order.phase2 .orderInfo,
+.order.phase3 .orderInfo {
+	height: 427px;
+}
+
+.orderInfo .title {
+	height: 30px;
+	line-height: 30px;
+}
+.orderInfo .title > span {
+	font-size: 1.3em;
+	padding-left: 5px;
+}
+.orderInfo .body {
+	height: calc(100% - 30px);
+	display: flex;
+}
+.orderInfo .body > .left {
+	margin-right: auto;
+}
+.orderInfo .body > .left
+, .orderInfo .body > .right {
+	background-color:rgb(24, 23, 23);
+	display: inline-block;
+	width: 49.5%;
+}
+
+.order_input {
+	display: flex;
+	flex-direction: column;
+}
+
+.order_input .row {
+	display: flex;
+	height: 30px;
+	padding-left:5px;
+	margin: unset;
+}
+
+.order_input .row .header {
+	flex-basis: 35%;
+	align-self: center;
+}
+.order_input .row.half .header {
+	flex-basis: 17.5%;
+}
+.order_input .row .data {
+	flex-basis: 65%;
+	align-self: center;
+}
+.order_input .row.half .data {
+	flex-basis: 32.5%;
+}
+.order_input .row span {
+	align-self: center;
+}
+
+.order_input .row .data select {
+	height: 1.5em;
+	width: 120px;
+}
+.order_input .row.half .data select {
+	width: 85px;
+}
+.order_input .row .data input {
+	height: 1.5em;
+	vertical-align: middle;
+	margin: 0px;
+	margin-right: 3px;
+}
+.order_input .row .data span {
+	height: 1.5em;
+	vertical-align: middle;
+	margin: 0px;
+	margin-right: 3px;
+}
+/*
+.order_input .row {
+	width:100%;
+    margin:0px;
+	height: 30px;
+	padding-left:5px;
+	line-height: 30px;
+}
+.order_input .row.half {
+	width:50%;
+	display: inline-block;
+}
+.order_input .row.half select {
+	width: 85px;
+}
+.order_input .row .header {
+	display: inline-block;
+	width: 35%;
+	vertical-align: middle;
+}
+.order_input .row .data {
+	display: inline-block;
+	width:65%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.order_input select {
+	height: 1.5em;
+	width: 120px;
+	vertical-align: middle;
+}
+.order_input input {
+	height: 1.5em;
+	vertical-align: middle;
+	margin: 0px;
+	line-height: normal;
+}
+*/
+.orderInfo .disabled {
+	color: rgb(105, 105, 105);
+}
+
+.order_input .unit_lot {
+	padding-left: 20px;
+}
+
+.order_input .row .data select.hour
+,.order_input .row .data select.min {
+	width: 45px;
+}
+
+.order_input input[type="button"].hensai_button {
+	margin-left: 20px;
+}
+
+.order_input input[type="button"].hensai_button.hidden {
+	display: none;
+}
+
+.order_input .input_up_down .orderPrice
+, .order_input .input_up_down .gyakusasiOrderPrice {
+	margin-left: 3px;
+}
+
+.input_up_down {
+	display: inline-block;
+}
+.input_up_down input[type="text"] {
+	text-align: right;
+	padding-right: 3px;
+}
+.input_up_down input[type="button"] {
+	vertical-align: middle;
+	margin-left: 3px;
+}
+.plus_button {
+	border:0px;
+	background-color: #000000;
+	background-image: url("/report-images/plus.png");
+	background-size:20px 20px;
+	margin-left: 2px;
+	height:20px;
+	width:20px;
+}
+.plus_button:active {
+	border:0px;
+	background-color: #000000;
+	background-image: url("/report-images/plus_a.png");
+	background-size:20px 20px;
+	margin-left: 2px;
+	height:20px;
+	width:20px;
+}
+.plus_button:disabled {
+	opacity: 0.5;
+}
+.minus_button {
+	border:0px;
+	background-color: #000000;
+	background-image: url("/report-images/minus.png");
+	background-size:20px 20px;
+	margin-left: 2px;
+	height:20px;
+	width:20px;
+}
+.minus_button:active {
+	background-color: #000000;
+	background-image: url("/report-images/minus_a.png");
+	background-size:20px 20px;
+	margin-left: 2px;
+	height:20px;
+	width:20px;
+}
+.minus_button:disabled {
+	opacity: 0.5;
+}
+/*
+.order_button {
+    font-size:14px;
+	color: #CCCCCC;
+	border:0px; 
+	padding:0px;
+	margin:5px;
+	height:30px;
+	width:60px;
+	border-color: #1485da #0f61b8 #0d56ae;
+	background-image: linear-gradient(to bottom, #0095df, #0064cd);
+}
+.order_button:active {
+	color: #FFFFFF;
+	background-image: linear-gradient(to bottom, #0064cd, #0095df);
+}
+*/
+.order .order_contents .row0,
+.order .order_contents .row1 {
+	height: 25px;
+	line-height: 25px;
+}
+.order .order_contents .row0 {
+	background-color: rgb(48, 48, 56);
+}
+.order .order_contents .header
+,.order .order_contents .data {
+	display: inline-block;
+}
+.order .order_contents .header {
+	padding-left: 5px;
+	width: 45%;
+}
+.order .order_contents .data {
+	width: 55%;
+}
+.order .order_contents .torihiki.kai .data {
+	color:rgb(250, 33, 98);
+}
+.order .order_contents .torihiki.uri .data {
+	color:rgb(13, 124, 228);
+}
+.order .order_contents .torihiki.genbikiwatasi .data {
+	color:rgb(117, 116, 10);
+}
+.order .order_contents .syouti .header {
+	color: rgb(233, 138, 22)
+}
+/*-----------------------------------------------------------------------------
+//	Footer
+//-----------------------------------------------------------------------------*/
+.order .message {
+	width: 100%;
+	height: 20px;
+	background-color: rgb(66, 66, 66);
+	color: red;
+	padding-left: 5px;
+}
+.order .footer {
+	width: 100%;
+	height: 40px;
+	text-align: right;
+	line-height: 30px;
+	padding: 4px;
+	background-color: rgb(24, 23, 23);
+}
+.order .footer input[type="button"].input {
+	margin-right: 10px;
+}
+.order .footer input[type="button"].confirm {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
+	height: 30px;
+}

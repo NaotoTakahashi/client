@@ -1,0 +1,382 @@
+.fullboard_header {
+    height: 54px;
+    padding: 2px 5px;
+    color:#ddd;
+    background-color:#222;
+}
+.fullboard_header div[class^="info_box_"] {
+    padding: 1px 0;
+}
+.fullboard_header .info_box_left {
+    display: flex;/* flexコンテナ指定、子要素は自動的にflexアイテムとなる */
+    flex-direction: row;/* 横並びに表示 */
+    flex-wrap: wrap;/* 画面幅に収まらない場合は折り返す */
+    float:  left; 
+}
+.fullboard_header .info_box_right {
+    float:  right; 
+}
+.fullboard_header .clear_box {
+    clear:  both;
+}
+div.fullboard_header input,
+div.fullboard_header select {
+    height: 22px;
+    padding-left: 2px;
+    margin: 0px;
+    color:#CCCCCC;
+    border: solid 1px #666;
+    border-radius: 2px;
+    background-color:#333;
+}
+ul.issue_search > li > input{
+    height: 22px;
+}
+
+.fullboard_header Button {
+    margin-left: 5px;
+    padding: 2px 4px;
+    font-size: 90%;
+    color:#CCC;
+    background-color:#444;
+}
+.fullboard_header Button.disabled ,
+.fullboard_header Button.disabled:hover ,
+.fullboard_header Button.disabled:focus {
+    color:#999;
+    cursor: default;
+    background-color:#444;
+}
+.fullboard_header .center_price_input {
+    margin-top: 1px;
+}
+/*.fullboard_header .search-icon {
+    display: inline-block;
+    margin: 2px 0 0 3px;
+    font-size: 18px;
+    color:#bbddff;
+}*/
+.fullboard_header .info_box_left span.title{
+    margin-top: 2px;
+}
+.fullboard_header .info_box_left .issue_name {
+    margin-top: 2px;
+    margin-left: 10px;
+    color:#e2dea1;
+}
+.fullboard_header .info_box_right .loan_type {
+    margin-right: 20px;
+    color:#e2dea1;
+}
+.fullboard_header .info_box_right .unit_share {
+    color:#e2dea1;
+}
+.fullboard_header .market_info {
+    margin-top: 4px;
+    margin-left: 20px;
+    color: red;
+}
+.fullboard_header .board_change {
+    float:  right; 
+}
+.OHLC .fullboard_header .unit_lot {
+    display:none;
+}
+.fullboard .fullboard_header .short_flag {
+    display:none;
+}
+.OHLC .fullboard_header .center_price_box {
+    visibility:hidden;
+}
+
+
+.OHLC .OHLC_div {
+    display: flex;/* flexコンテナ指定、子要素は自動的にflexアイテムとなる */
+    flex-direction: row;/* 横並びに表示 */
+    flex-wrap: wrap;/* 画面幅に収まらない場合は折り返す */
+    width: 100%;
+    background-color:#2e2e2e;
+}
+.OHLC .OHLC_div > div {
+    color:#CCCCCC;
+    border: outset 1px #ee99cc;
+    /*border: solid 1px #ff94f6;*/
+    padding: 12px;
+}
+.OHLC .OHLC_div>div>table {
+    width: 100%;
+}
+.OHLC .OHLC_div>div.title {
+    text-align: center;
+    padding: 5px;
+}
+.OHLC .OHLC_div .title
+,.OHLC .OHLC_div th {
+    color:#dddd88;
+}
+.OHLC .OHLC_div th {
+    font-weight: normal;
+    padding-bottom: 1px;
+    padding-right: 10px;
+}
+.OHLC table td {
+    padding-right: 10px;
+    color:#ddd;
+}
+.OHLC .OHLC_box_top {
+    width: 100%;
+    height: 70px;
+}
+.OHLC .OHLC_box_top>table td {
+    width: 90px;
+}
+.OHLC .OHLC_box_harf {
+    width: 50%;
+}
+.OHLC .current_price {
+    font-size: 130%;
+    height: 55px; 
+}
+.OHLC .DPG{
+    text-align: right;
+}
+.OHLC .text_120 {
+    font-size: 120%;
+}
+.OHLC .text_right {
+    text-align: right;
+}
+/*
+.board {
+    height: 100%;
+}
+.board table {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-collapse: collapse;
+}
+.board table img{
+	margin: 0;
+	padding: 0;
+	border: 0px;
+	vertical-align: bottom;
+}*/
+
+/*.modal_container {
+    position: relative;
+}
+.modal_container .modal, .modal_container .modal-backdrop {
+    position: absolute;
+}
+.modal_message .modal-dialog {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100%;
+	margin: auto;
+	pointer-events: none;
+    width: 100%;
+}
+.modal_message .modal-content {
+	background-color: white;
+	color: #333333;
+	text-align: center;
+	pointer-events: all;
+	width: 70%;
+	margin: auto;
+}*/
+.message_overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: calc(100% - 26px);
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.message_overlay.on_disp {
+    display: block;
+}
+.message_overlay .message_content {
+    position: relative;
+    background-color: white;
+    padding: 15px;
+    color:#FF0000;
+	text-align: center;
+    border-radius: 5px;
+    width: 70%;
+    top: 300px;
+	margin: auto;
+}
+.fullboard_table th,
+.fullboard_table td {
+    margin: 0px;
+    border: none;
+    padding: 0px;
+	padding-right: 4px;
+	padding-left: 4px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.fullboard_table td {
+	height:25px;
+    color:#f5f5f5;
+}
+.fullboard_table tr.row0 > td {
+    /*background-color:#333333;*/
+    background-color:#2e2e2e;
+}
+.fullboard_table tr > td {
+    /*background-color:#2e2e2e;*/
+    background-color:#292929;
+}
+.fullboard_table td {
+    width: 75px; 
+}
+.fullboard_table td.flag {
+    width: 20px; 
+}
+.fullboard_table td {
+    text-align: center;
+}
+.fullboard_table td.lot:hover
+,.fullboard_table td.count:hover  {
+    opacity: 1;
+    background: #1e4b81;
+}
+.fullboard_table td.flag.bid
+,.fullboard_table td.bid.update {
+    color:#a8ffa8;
+}
+.fullboard_table td.flag.ask
+,.fullboard_table td.ask.update {
+    color:#ff9b9b;
+}
+
+.fullboard_table tr > td.ohlc_label {
+    width:50px;
+    text-align:left;
+    color:#339999;
+    background-color:#373737;
+}
+.fullboard_table tr > td.ohlc_value {
+    width:75px;
+    text-align:right;
+    color:#CCCCCC;
+    background-color:#373737;
+}
+.fullboard_table td.change_price {
+    width:75px;
+    text-align:right;
+    color:#CCCCCC;
+    background-color:#373737;
+}
+
+.fullboard_table td.bid.lot,
+.fullboard_table td.bid.closeLot,
+.fullboard_table td.bid.totalLot {
+    color: #24c224;
+}
+.fullboard_table td.ask.lot,
+.fullboard_table td.ask.closeLot,
+.fullboard_table td.ask.totalLot {
+    color: #e75353
+}
+
+.OHLC .OHLC_div .OHLC_table .text_red{
+    color:#e75353;
+}
+.OHLC .OHLC_div .OHLC_table .plus
+,.OHLC .OHLC_div .OHLC_table .up {
+    color:#FF7777;
+}
+.OHLC .OHLC_div .OHLC_table .minus
+,.OHLC .OHLC_div .OHLC_table .down {
+    color:#76FF77;
+}
+.OHLC_table td.update {
+    color:#f0f0be;
+}
+
+.fullboard .fullboard_table tr > td{
+    border: dotted 1px #4b4b4b;
+/*  border: dashed 1px #f7fff5;
+    border: outset 1px #f7fff5;
+*/}
+.fullboard .fullboard_table .title{
+    text-align:center;
+    border: 0px;
+}
+.fullboard .fullboard_table tr > td.blue{
+    color:#f5f5f5;
+    background-color:#5f99e6;
+    background: linear-gradient(to bottom, #5f99e6 50%,#478ae0 100%);
+}
+.fullboard .fullboard_table tr > td.red{
+    color:#f5f5f5;
+    background-color:#ee7269;
+    background: linear-gradient(to bottom, #ee7269 50%,#f06359 100%);
+}
+.fullboard .fullboard_table tr > td.price.now{
+    background-color:#f06868;
+    background-color:#da3636;
+}
+.fullboard .fullboard_table tr > td.price.center{
+    background-color:#fd8bc4;
+    background-color:#cf40c8;
+}
+.fullboard .fullboard_table tr > td.price.high{
+    background-color:#ebb812;
+    background-color:#c2b21d;
+}
+.fullboard .fullboard_table tr > td.price.low{
+    background-color:#2ebff0;
+    background-color:#189ad6;
+}
+.fullboard .fullboard_table tr > td.price.center.now{
+    background: -moz-linear-gradient(top, #f06868 50%, #fd8bc4 51%);
+    background: -webkit-linear-gradient(top, #f06868 50%,#fd8bc4 51%);
+    background: linear-gradient(to bottom, #f06868 50%,#fd8bc4 51%);
+
+    background: -moz-linear-gradient(top, #da3636 50%, #cf40c8 51%);
+    background: -webkit-linear-gradient(top, #da3636 50%,#cf40c8 51%);
+    background: linear-gradient(to bottom, #da3636 50%,#cf40c8 51%);
+}
+.fullboard .fullboard_table tr > td.price.center.high{
+    background: -moz-linear-gradient(top, #ebb812 50%, #fd8bc4 51%);
+    background: -webkit-linear-gradient(top, #ebb812 50%,#fd8bc4 51%);
+    background: linear-gradient(to bottom, #ebb812 50%,#fd8bc4 51%);
+
+    background: -moz-linear-gradient(top, #c2b21d 50%, #cf40c8 51%);
+    background: -webkit-linear-gradient(top, #c2b21d 50%,#cf40c8 51%);
+    background: linear-gradient(to bottom, #c2b21d 50%,#cf40c8 51%);
+}
+.fullboard .fullboard_table tr > td.price.center.low{
+    background: -moz-linear-gradient(top, #fd8bc4 50%, #2ebff0 51%);
+    background: -webkit-linear-gradient(top, #fd8bc4 50%,#2ebff0 51%);
+    background: linear-gradient(to bottom, #fd8bc4 50%,#2ebff0 51%);
+
+    background: -moz-linear-gradient(top, #cf40c8 50%, #189ad6 51%);
+    background: -webkit-linear-gradient(top, #cf40c8 50%,#189ad6 51%);
+    background: linear-gradient(to bottom, #cf40c8 50%,#189ad6 51%);
+}
+.fullboard .fullboard_table tr > td.price.now.high{
+    background: -moz-linear-gradient(top, #ebb812 50%, #f06868 51%);
+    background: -webkit-linear-gradient(top, #ebb812 50%,#f06868 51%);
+    background: linear-gradient(to bottom, #ebb812 50%,#f06868 51%);
+
+    background: -moz-linear-gradient(top, #c2b21d 50%, #da3636 51%);
+    background: -webkit-linear-gradient(top, #c2b21d 50%,#da3636 51%);
+    background: linear-gradient(to bottom, #c2b21d 50%,#da3636 51%);
+}
+.fullboard .fullboard_table tr > td.price.now.low{
+    background: -moz-linear-gradient(top, #f06868 50%, #2ebff0 51%);
+    background: -webkit-linear-gradient(top, #f06868 50%,#2ebff0 51%);
+    background: linear-gradient(to bottom, #f06868 50%,#2ebff0 51%);
+
+    background: -moz-linear-gradient(top, #da3636 50%, #189ad6 51%);
+    background: -webkit-linear-gradient(top, #da3636 50%,#189ad6 51%);
+    background: linear-gradient(to bottom, #da3636 50%,#189ad6 51%);
+}

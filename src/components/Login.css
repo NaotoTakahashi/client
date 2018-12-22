@@ -1,0 +1,106 @@
+/*
+ Modal Daialog Login
+*/
+.login_modal .modal-dialog {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100%;
+	margin: auto;
+	pointer-events: none;
+}
+.login_modal .modal-content {
+	background-color: white;
+	color: #333333;
+	text-align: center;
+	pointer-events: all;
+	width: 70%;
+	/*height: 30%;*/
+	margin: auto;
+}
+.login_modal .modal-header {
+	color: white;
+	font-size: 180%;
+	background: -moz-linear-gradient(left, #ce0048 0%, #dd6881 45%,#bc3618  70%,#e0b8b8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #00ace0 0%,#69cddb 49%,#42b4dd 74%,#a5c0c6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #005700 0%,#52b152 20%,#61c419 40%,#61c419 80%,#b4ddb4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 5px 5px 0px 0px;
+/*	display: flex;
+	align-items: flex-end;
+	vertical-align: bottom;
+	padding: 15px;*/
+}
+.login_modal .circle{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: #faffbd;
+	color: #666;
+/*	vertical-align: middle;*/
+/*	margin: auto 18px;*/
+	margin-bottom: 10px;
+}
+.login_modal .circle .fa{
+	line-height: 66px;
+}
+.login_modal .modal-body {
+	padding: 10px 15px;
+}
+.login_modal .modal-body input
+, .login_modal .modal-body div{
+	text-align: left;
+	margin: 5px 40px;
+}
+.login_modal input {
+	border-radius: 5px;
+	width: 80%;
+}
+.login_modal .modal-footer {
+	text-align:center;
+}
+.login_modal .btn {
+	width: 80%;
+	background: #dcffc4;
+	border-style: double;
+}
+.login_modal .btn:hover
+, .login_modal .btn:focus {
+	background: #b2fd7d;
+	border-color: #6bda65;
+}
+.login_modal #login_errmessage_text {
+	color:red;
+}
+.login_modal #login_userid_input, #login_pass_input {
+	color:#666;
+}
+
+/*
+ Modal Daialog Loading
+*/
+.loading_modal .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    margin: auto;
+    pointer-events: none;
+    /*width: 0px;*/
+}
+.loading_modal .modal-content {
+    background-color: transparent;
+    color: white;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    pointer-events: all;
+}
+.loading_modal .loading_icon {
+    display: inline-block;
+    font-size: 200%;
+}
+.loading_modal .loading_text {
+    font-size: inline-block;
+    font-size: 110%;
+}

@@ -1,0 +1,193 @@
+.board {
+    height: 100%;
+}
+.board_div {
+    width:100%;
+    height:100%;
+    background-color:#373737;
+}
+.board table {
+    width:100%;
+    /*height: 100%;*/
+    margin:0px;
+    padding:0px;
+    border:0px;
+    border-collapse:collapse;
+}
+.board table img{
+	margin:0;
+	padding:0;
+	border:0px;
+	vertical-align: bottom;
+}
+.board_input input,
+.board_input select {
+    margin:0px;
+    border:0px;
+    color:#CCCCCC;
+    background-color:#3E3E3E;
+}
+.board .message {
+    color:#FF0000;
+}
+
+.board_table th,
+.board_table td {
+    margin:0px;
+    border: none;
+    padding:0px;
+	padding-right:4px;
+	padding-left:4px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.board_table td {
+	height:25px;
+    color:#CCCCCC;
+}
+.board_table td.header {
+    height: 28px;
+    text-align: center;
+    background-color:#222222;
+    color: #0C69DA;
+}
+.board_table tr.row0 > td {
+    background-color:#3E3E3E;
+}
+.board_table tr > td {
+    background-color:#373737;
+}
+.board_table td.lot,
+.board_table td.price {
+    width: 75px; 
+}
+.board_table td.flag {
+    width: 20px; 
+}
+.board_table td.price,
+.board_table td.flag {
+    text-align:center;
+}
+.board_table td.lot {
+    text-align:right;
+}
+.board_table td.lot:hover {
+    opacity: 1;
+    background: #0C69DA;
+}
+.board_table td.flag.ask {
+    color:#76FF77;
+}
+.board_table td.flag.bid {
+    color:#FF7777;
+}
+.board_table td.ask.update {
+    color:#76FF77;
+}
+.board_table td.bid.update {
+    color:#FF7777;
+}
+.board_table > tbody > tr > td.last_price {
+    width:75px;
+    font-size:190%;
+    text-align:right;
+    color:#CCCCCC;
+}
+.board_table td.last_price.up {
+    width:75px;
+    text-align:right;
+    color:#FF7777;
+}
+.board_table td.last_price.down {
+    width:75px;
+    text-align:right;
+    color:#76FF77;
+}
+.board_table td.last_indicator {
+    width:20px;
+    text-align:right;
+    color:#CCCCCC;
+}
+.board_table td.last_indicator_plus {
+    width:20px;
+    text-align:center;
+    color:#FF7777;
+}
+.board_table td.last_indicator_minus {
+    width:20px;
+    text-align:center;
+    color:#76FF77;
+}
+.board_table td.last_time {
+    width:75px;
+    text-align:center;
+    color:#CCCCCC;
+}
+.board_table td.session {
+    width:75px;
+    text-align:center;
+    color:#CCCCCC;
+}
+.board_table td.bid_price0_dpp {
+    width:75px;
+    text-align:center;
+    color:#ffd700;
+    background-color:#3E3E3E;
+}
+.board_table td.ask_price_dpp {
+    width:75px;
+    text-align:center;
+    color:#ffd700;
+    background-color:#373737;
+}
+.board_table td.bid_price_dpp {
+    width:75px;
+    text-align:center;
+    color:#ffd700;
+    background-color:#373737;
+}
+.board_table tr > td.ohlc_label {
+    width:50px;
+    text-align:left;
+    color:#339999;
+    background-color:#373737;
+}
+.board_table tr > td.ohlc_value {
+    width:75px;
+    text-align:right;
+    color:#CCCCCC;
+    background-color:#373737;
+}
+.board_table td.change_price {
+    width:75px;
+    text-align:right;
+    color:#CCCCCC;
+    background-color:#373737;
+}
+.board_table td.change_price.plus {
+    width:75px;
+    text-align:right;
+    color:#FF7777;
+    background-color:#373737;
+}
+.board_table td.change_price.minus {
+    width:75px;
+    text-align:right;
+    color:#76FF77;
+    background-color:#373737;
+}
+/*
+.board_table td.last_price.brink {
+    animation: brinkPlus 2s step-end;
+}
+
+@keyframes brinkPlus {
+    0% {
+        color: #FF7777;
+    }
+    100% {
+        color: unset;
+    }
+}
+*/

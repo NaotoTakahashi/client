@@ -1,0 +1,36 @@
+.table_header,.table_body {
+    border-top: 1px solid #141414;
+    border-left: 1px solid #141414;
+}
+.table_header_item,
+.table_row_item {
+    display: inline-block;
+    width: 65px;
+    height: 20px;   /* .table_header,.table_rowと同じに設定 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: white;
+    border-bottom: 1px solid #141414;
+    border-right: 1px solid #141414;
+}
+
+.table_header_item {
+    background-color: #3e3f42;
+}
+
+.table_header_item.sortable {
+    color: #5478e6;
+}
+.table_header_item.sortable:active {
+    color: #b2bde0;
+}
+
+.table_row_item {
+    background-color: #5c5f69
+}
+
+.table_header,
+.table_row {
+    height: 20px;   /* .table_header_item,.table_row_itemと同じに設定 */
+}

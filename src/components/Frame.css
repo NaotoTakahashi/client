@@ -1,0 +1,55 @@
+.frame {
+    position:absolute;
+    border-radius: 5px 5px 5px 5px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+	background-color: #CCCCCC;
+	visibility: visible;
+    border-radius: 5px 5px 0px 0px;
+}
+.frame .header {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.frame .header .title {
+    font-size: 10pt;
+	color: white;
+	float: left;
+	margin-left: 3px;
+	width: 200px;
+	line-height: 26px;
+}
+.frame .header div.buttons {
+    float: right;
+}
+.frame .header div.maximizeButton {
+	display: inline-block;
+    color: gray;
+	line-height: 12pt;
+	width: 12px;
+	height: 12px;
+	margin-top: 8px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.frame .header div.maximizeButton:hover {
+    color: silver;
+}
+.frame .header div.maximizeButton:active {
+    color: black;
+}
+.frame .header div.closeButton {
+	display: inline-block;
+    color: gray;
+    line-height: 12pt;
+	width: 12px;
+	height: 12px;
+	margin-top: 8px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.frame .header div.closeButton:hover {
+    color: silver;
+}
+.frame .header div.closeButton:active {
+    color: black;
+}

@@ -1,0 +1,24 @@
+.issue_search {
+    list-style: none;
+    padding: 0px;
+    margin-left: 3px;
+    -webkit-margin-before: 0em;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.issue_search > div {
+    display: inline-block;
+    align-self: center;
+}
+
+.issue_search > input {
+    padding-left: 2px;
+}
+
+.issue_search > select.market_select {
+    margin-left: 3px;
+}
+iframe{
+    border: 2px #555 solid;
+}
